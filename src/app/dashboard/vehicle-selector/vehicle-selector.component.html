@@ -4,12 +4,12 @@
       <label class="texto" for="">Veículo</label>
    </div>
    <div class="container-dropdown">
-      <select class="dropdown" name="dropdown" id="" focus>
+      <select class="dropdown" [(ngModel)]="veiculoSelecionado" (change)="onChange()" focus>
         <option selected disabled value="">Selecione</option>
-        <option value="">Ranger</option>
-        <option value="">Mustang</option>
-        <option value="">Territory</option>
-        <option value="">Bronco Sport</option>
+        <option value="Ranger">Ranger</option>
+        <option value="Mustang">Mustang</option>
+        <option value="Territory">Territory</option>
+        <option value="Bronco">Bronco Sport</option>
       </select>
   </div>
   </div>

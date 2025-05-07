@@ -10,3 +10,8 @@
     margin-left: 50px;
 }
 
+.teste2 {
+  display: flex;
+  gap: 125px;
+}
+
