@@ -1,0 +1,12 @@
+.conttexto {
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.teste {
+    display: flex;
+    gap: 125px;
+    margin-left: 50px;
+}
+

@@ -1,0 +1,37 @@
+.total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.container-geral {
+    border: solid #000000 1px;
+    width: 348px;
+    height: 200px;
+    border-left: solid black;
+    border-bottom: solid black;
+}
+
+.container-texto {
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    padding-left: 25px;
+    height: 25%;
+}
+
+.dropdown{
+    height: 50px;
+    width: 300px;
+}
+
+.container-dropdown {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.texto {
+    font-size: 25px;
+}
