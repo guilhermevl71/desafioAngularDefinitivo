@@ -4,12 +4,9 @@
       <label class="texto" for="">Veículo</label>
    </div>
    <div class="container-dropdown">
-      <select class="dropdown" [(ngModel)]="veiculoSelecionado" (change)="onChange()" focus>
-        <option selected disabled value="">Selecione</option>
-        <option value="Ranger">Ranger</option>
-        <option value="Mustang">Mustang</option>
-        <option value="Territory">Territory</option>
-        <option value="Bronco">Bronco Sport</option>
+      <select class="dropdown" [(ngModel)]="veiculoSelecionado" (change)="onChange()" focus> <!-- veiculoSelecionado é igual um objeto completo da lista de veiculos-->
+        <option [ngValue]="null" disabled selected>Selecione</option>
+        <option *ngFor="let v of veiculos" [ngValue]="v">{{ v.vehicle }}</option> <!--v é um objeto inteiro da lista, quando seleciono uma opção do select o angular faz v = veiculoSelecionado, isso pq o [ngValue] é v, que é um objeto inteiro da lista, então o ngmodel recebe que seu valor tambem é v, e alterar o veiculoselecionado, pois ambos tem que ter o mesmo valor -->
       </select>
   </div>
   </div>

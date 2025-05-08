@@ -1,17 +1,37 @@
+.principal {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
 .conttexto {
-    display: flex;
-    justify-content: center;
-    margin-top: 75px;
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+}
+
+.titulo {
+  color: blue;
+  font-size: 2.75rem;
 }
 
 .teste {
-    display: flex;
-    gap: 125px;
-    margin-left: 50px;
+  display: flex;
+  gap: 125px;
+  margin-left: 50px;
 }
 
 .teste2 {
   display: flex;
   gap: 125px;
+}
+
+.container-img {
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  width: 45%;
 }
 

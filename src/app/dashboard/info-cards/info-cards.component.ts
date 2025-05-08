@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Veiculo, Veiculos } from '../../../../models/veiculo.model';
 
 @Component({
@@ -8,12 +8,7 @@ import { Veiculo, Veiculos } from '../../../../models/veiculo.model';
   styleUrl: './info-cards.component.css'
 })
 export class InfoCardsComponent {
-  card: Veiculo = {
-        id: 1,
-        vehicle: 'Ranger',
-        volumetotal: 1500,
-        connected: 10,
-        softwareUpdates: 15
-      };
+ @Input() titulo: string = '';
+ @Input() valor: number = 0;
 
 }

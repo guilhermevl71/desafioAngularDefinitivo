@@ -3,33 +3,38 @@ import { VehicleSelectorComponent } from './vehicle-selector/vehicle-selector.co
 import { InfoCardsComponent } from './info-cards/info-cards.component';
 import { NgFor } from '@angular/common';
 import { Veiculo, Veiculos } from '../../../models/veiculo.model';
+import { VeiculosService } from '../veiculos.service';
+import { TabbleComponent } from './tabble/tabble.component';
 
 @Component({
   selector: 'app-dashboard',
   imports: [
       VehicleSelectorComponent,
       InfoCardsComponent,
-      NgFor
+      TabbleComponent
     ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })
 export class DashboardComponent {
-  listacard: Veiculos = [
-    {
-      id: 1,
-      vehicle: 'Ranger',
-      volumetotal: 100,
-      connected: 10,
-      softwareUpdates: 15
-    }
-  ];
 
   veiculoSelecionado?: Veiculo;
 
-atualizarVeiculoSelecionado(nome: string) {
-  this.veiculoSelecionado = this.listacard.find(v => v.vehicle === nome);
-}
+  veiculos: Array<Veiculo> = [];
+  constructor(private veiculosservice: VeiculosService) { }
+
+  vehicleNames: string[] = [];
+  ngOnInit(): void {
+    this.veiculosservice.getVehicles().subscribe((dados) => {
+      console.log('Veículos recebidos:', dados);
+      this.veiculos = dados.vehicles;
+      this.vehicleNames = this.veiculos.map(v => v.vehicle);
+    })
+  }
+
+  atualizarVeiculoSelecionado(veiculo: Veiculo) {
+    this.veiculoSelecionado = veiculo; /* está função tem como objetivo alterar o valor de vehicle da lista veiculos, para o valor de select do componente filho vehicle-selector */
+  }
 
 
 }
