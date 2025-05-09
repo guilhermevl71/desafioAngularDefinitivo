@@ -20,9 +20,15 @@
           ></app-info-cards>
         </div>
     </div>
-    <div class="container-img">
-      <img class="img" [src]="veiculoSelecionado?.img" alt="">
+    <div class="container-img" *ngIf="veiculoSelecionado, else teste">
+      <img class="img" [src]="veiculoSelecionado.img">
     </div>
   </section>
 <app-tabble></app-tabble>
 </div>
+
+<ng-template #teste>
+  <div class="NadaSelecionado">
+    <h2 class="NadaSelecionado-texto">Nenhum veiculo selecionado</h2>
+  </div>
+</ng-template>

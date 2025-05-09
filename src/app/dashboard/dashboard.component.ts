@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { VehicleSelectorComponent } from './vehicle-selector/vehicle-selector.component';
 import { InfoCardsComponent } from './info-cards/info-cards.component';
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 import { Veiculo, Veiculos } from '../../../models/veiculo.model';
 import { VeiculosService } from '../veiculos.service';
 import { TabbleComponent } from './tabble/tabble.component';
@@ -11,7 +11,8 @@ import { TabbleComponent } from './tabble/tabble.component';
   imports: [
       VehicleSelectorComponent,
       InfoCardsComponent,
-      TabbleComponent
+      TabbleComponent,
+      NgIf
     ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
