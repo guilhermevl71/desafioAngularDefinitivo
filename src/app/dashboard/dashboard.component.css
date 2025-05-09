@@ -1,7 +1,14 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .principal {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  flex: 1;
 }
 
 .conttexto {
@@ -35,3 +42,6 @@
   width: 45%;
 }
 
+footer {
+  margin-top: auto;
+}

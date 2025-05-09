@@ -1,4 +1,12 @@
-.azul {
-    background-color: #002147; 
-    color: white;
-}
+table, th, td {
+    border: 1px solid black !important;
+  }
+
+  .input {
+    width: 90%;
+  }
+
+  .pesquisa {
+    display: flex;
+    gap: 10px;
+  }

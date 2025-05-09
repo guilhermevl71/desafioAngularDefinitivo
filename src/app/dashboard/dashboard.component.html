@@ -1,26 +1,28 @@
-<section class="principal">
-  <div class="conttexto">
-      <h1 class="titulo">Dashboard FORD</h1>
-  </div>
-  <div class="teste">
-      <app-vehicle-selector [veiculos]="veiculos" (onChangeVeiculo)="atualizarVeiculoSelecionado($event)"></app-vehicle-selector>
-      <div class="teste2">
-        <app-info-cards
-          [titulo]="'Total de Vendas'"
-          [valor]= "+(veiculoSelecionado?.volumetotal || 0)"
-        ></app-info-cards>
-        <app-info-cards
-          [titulo]="'Conectados'"
-          [valor]="+(veiculoSelecionado?.connected || 0)"
-        ></app-info-cards>
-        <app-info-cards
-          [titulo]="'Update Software'"
-          [valor]= "+(veiculoSelecionado?.softwareUpdates || 0)"
-        ></app-info-cards>
-      </div>
-  </div>
-  <div class="container-img">
-    <img class="img" [src]="veiculoSelecionado?.img" alt="aaaa">
-  </div>
-  <app-tabble></app-tabble>
-</section>
+<div class="dashboard-container">
+  <section class="principal">
+    <div class="conttexto">
+        <h1 class="titulo">Dashboard FORD</h1>
+    </div>
+    <div class="teste">
+        <app-vehicle-selector [veiculos]="veiculos" (onChangeVeiculo)="atualizarVeiculoSelecionado($event)"></app-vehicle-selector>
+        <div class="teste2">
+          <app-info-cards
+            [titulo]="'Total de Vendas'"
+            [valor]= "+(veiculoSelecionado?.volumetotal || 0)"
+          ></app-info-cards>
+          <app-info-cards
+            [titulo]="'Conectados'"
+            [valor]="+(veiculoSelecionado?.connected || 0)"
+          ></app-info-cards>
+          <app-info-cards
+            [titulo]="'Update Software'"
+            [valor]= "+(veiculoSelecionado?.softwareUpdates || 0)"
+          ></app-info-cards>
+        </div>
+    </div>
+    <div class="container-img">
+      <img class="img" [src]="veiculoSelecionado?.img" alt="">
+    </div>
+  </section>
+<app-tabble></app-tabble>
+</div>

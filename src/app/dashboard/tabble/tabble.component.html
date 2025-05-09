@@ -1,38 +1,28 @@
-<table class="table">
-    <thead class="azul">
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
-        <th scope="col">Handle</th>
-        <th scope="col">Handle</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>mdo</td>
-        <td>mdo</td>
-        <td>mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>fat</td>
-        <td>fat</td>
-        <td>fat</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>John</td>
-        <td>Doe</td>
-        <td>social</td>
-        <td>social</td>
-        <td>social</td>
-      </tr>
-    </tbody>
-  </table>
+<table class="table table-bordered text-center">
+  <thead>
+    <tr class="bg-primary text-white">
+      <th class="bg-primary text-white" scope="col">Código - Vin</th>
+      <th class="bg-primary text-white" scope="col">Odômetro</th>
+      <th class="bg-primary text-white" scope="col">Nível de Combustível</th>
+      <th class="bg-primary text-white" scope="col">Status</th>
+      <th class="bg-primary text-white" scope="col">Lat.</th>
+      <th class="bg-primary text-white" scope="col">Long.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="pesquisa">
+        <input [(ngModel)]='vin' class="input" type="text" placeholder="Digite o Vin">
+        <button class="btn btn-primary" (click)="buscarDadosPorVin()">Buscar</button>
+      </td>
+      <td>{{ dadosVeiculo?.odometro }}</td>
+      <td>{{ dadosVeiculo?.nivelCombustivel }}</td>
+      <td>{{ dadosVeiculo?.status }}</td>
+      <td>{{ dadosVeiculo?.lat }}</td>
+      <td>{{ dadosVeiculo?.long }}</td>
+    </tr>
+  </tbody>
+</table>
+<div *ngIf="erro" class="alert alert-danger mt-2">
+  {{ erro }}
+</div>
