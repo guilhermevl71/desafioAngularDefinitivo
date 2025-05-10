@@ -1,0 +1,16 @@
+.teste {
+    display: flex;
+}
+
+.container-img {
+    display: flex;
+    align-items: center;
+}
+
+.container-form {
+}
+
+.imagem {
+    width: 98%;
+    opacity: 50%;
+}
