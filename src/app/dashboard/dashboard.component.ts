@@ -6,16 +6,18 @@ import { Veiculo, Veiculos } from '../../../models/veiculo.model';
 import { VeiculosService } from '../veiculos.service';
 import { TabbleComponent } from './tabble/tabble.component';
 import { NavbarComponent } from '../navbar/navbar.component';
+import { LogoutComponent } from "../logout/logout.component";
 
 @Component({
   selector: 'app-dashboard',
   imports: [
-      VehicleSelectorComponent,
-      InfoCardsComponent,
-      TabbleComponent,
-      NgIf,
-      NavbarComponent
-    ],
+    VehicleSelectorComponent,
+    InfoCardsComponent,
+    TabbleComponent,
+    NgIf,
+    NavbarComponent,
+    LogoutComponent
+],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })
