@@ -5,6 +5,7 @@ import { NgFor, NgIf } from '@angular/common';
 import { Veiculo, Veiculos } from '../../../models/veiculo.model';
 import { VeiculosService } from '../veiculos.service';
 import { TabbleComponent } from './tabble/tabble.component';
+import { NavbarComponent } from '../navbar/navbar.component';
 
 @Component({
   selector: 'app-dashboard',
@@ -12,7 +13,8 @@ import { TabbleComponent } from './tabble/tabble.component';
       VehicleSelectorComponent,
       InfoCardsComponent,
       TabbleComponent,
-      NgIf
+      NgIf,
+      NavbarComponent
     ],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
