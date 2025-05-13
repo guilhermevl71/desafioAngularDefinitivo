@@ -39,3 +39,9 @@
 .teste {
     width: 85%;
 }
+
+.checkbox {
+  display: flex;
+  padding-bottom: 5px;
+  gap: 2px;
+}
