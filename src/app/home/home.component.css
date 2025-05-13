@@ -4,3 +4,23 @@ section {
     justify-content: center;
     height: 100vh;
 }
+
+.pop-up {
+  position: absolute;
+  background-color: rgb(32, 31, 31);
+  width: 65vh;
+  height: 50vh;
+  opacity: 85%;
+  border-radius: 1rem;
+  top: 24%;
+}
+
+.pop-up-texto {
+  padding-left: 3%;
+  padding-top: 1%;
+
+}
+
+.texto {
+  color: white;
+}
