@@ -121,5 +121,5 @@ Um sistema web construído com Angular e Bootstrap para visualização dinâmica
 ## 👨‍💻 Desenvolvido por
 
 **Guilherme Costa Sousa Vilã Santos**  
-Técnico em Informática • Estudante de Ciência e Tecnologia (UFBA)  
+• Estudante de Ciência da computação (Unijorge)  
 [GitHub](https://github.com/guilhermevl71)

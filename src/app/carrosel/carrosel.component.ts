@@ -11,7 +11,7 @@ export class CarroselComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     class Carousel {
-      constructor(images: any[], interval = 90000) {
+      constructor(images: any[], interval = 900000) {
         this.images = images;
         this.index = 0;
         this.intervalTime = interval;
