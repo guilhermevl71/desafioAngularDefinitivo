@@ -9,10 +9,10 @@
     <div class="carousel-item active" data-bs-interval="900000">
       <img src="assets/ranger-raptor/ranger1.jpg" class="d-block w-100 teste" alt="...">
       <nav>
-        <a class="cabecalho__link" href="">Home</a>
-        <a class="cabecalho__link" href="">Lançamento</a>
-        <a class="cabecalho__link" href="">Contato</a>
-        <a class="cabecalho__link" href="">Login</a> <!--fazer um dropdown-->
+        <a class="cabecalho__link" [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
+        <a class="cabecalho__link" [routerLink]="['/lancamento']" routerLinkActive="router-link-active">Lançamento</a>
+        <a class="cabecalho__link" [routerLink]="['/contato']" routerLinkActive="router-link-active">Contato</a>
+        <a class="cabecalho__link" [routerLink]="['/login']" routerLinkActive="router-link-active">Login</a> <!--fazer um dropdown-->
       </nav>
       <div class="container-info">
         <img src="assets/logo/logotodabranca.png" alt="" class="logo">
@@ -21,7 +21,7 @@
           <p class="paragrafo">Raça forte na terra e no asfalto!</p>
         </div>
         <div class="container-link">
-          <a [routerLink]="['/dashboard']" class="link" routerLinkActive="router-link-active">Saiba mais</a>
+          <a [routerLink]="['/dashboard']" class="link" routerLinkActive="router-link-active">Conheça o veiculo</a>
         </div>
       </div>
     </div>
@@ -42,15 +42,7 @@
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="5000">
-      <img src="assets/ranger-raptor/ranger3.jpg" class="d-block w-100 teste" alt="...">
+      <img src="assets/march/mustang march-e.jpg" class="d-block w-100 teste" alt="...">
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
 </div>
