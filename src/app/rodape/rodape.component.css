@@ -68,3 +68,60 @@
 .diretos-paragrafo:hover {
     text-decoration: underline;
 }
+
+@media(max-width: 1024px) {
+    .rodape-geral {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .rodape {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .rodape__redes {
+        gap: 0.5px;
+    }
+
+    .rodape-veiculos {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .rodape-atendimento {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .rodape-icons {
+        gap: 2px;
+    }
+
+    .rodape-icons {
+        transform: scale(0.75);
+    }
+
+    .rodape__subtitulo {
+        font-size: 0.75rem;
+    }
+
+    .diretos-paragrafo {
+        font-size: 0.6rem;
+    }
+
+    .diretos-copyright {
+        font-size: 0.6rem;
+    }
+
+    .rodape__logo {
+        width: 20%;
+    }
+
+    .rodape-direitos {
+        padding-bottom: 0px;
+    }
+}

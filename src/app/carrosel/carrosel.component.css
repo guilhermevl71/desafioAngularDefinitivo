@@ -1,8 +1,12 @@
+app-navbar {
+  display: none;
+}
+
 nav {
   display: flex;
   gap: 2rem;
   position: absolute;
-  left: 78%;
+  left: 75%;
   top: 1%;
 }
 
@@ -21,12 +25,7 @@ nav {
   transform: scale(1.05);
 }
 
-.teste { /* quando for deixa responsivo apenas muda o heigh de vh para px eu acho, ou puxa mx heigh ou colocar auto */
-  height: 100vh;
-  object-fit: cover;
-}
-
-.video {
+.image { /* quando for deixa responsivo apenas muda o heigh de vh para px eu acho, ou puxa mx heigh ou colocar auto */
   height: 100vh;
   object-fit: cover;
 }
@@ -62,17 +61,146 @@ nav {
 
 .link {
   text-decoration: none;
-    color: black;
-    font-family: var(--font-secundaria);
-    font-weight: 600;
-    font-size: 1.25rem;
-    background-color: white;
-    border-radius: 48px;
-    padding: 10px 32px 10px 32px;
-    letter-spacing: 1.5px;
-    transition: background-color 0.5s ease;
+  color: black;
+  font-family: var(--font-secundaria);
+  font-weight: 600;
+  font-size: 1.25rem;
+  background-color: white;
+  border-radius: 48px;
+  padding: 10px 32px 10px 32px;
+  letter-spacing: 1.5px;
+  transition: background-color 0.5s ease;
 }
 
 .link:hover {
   background-color: #d1d1d1;
+}
+
+@media(max-width: 600px) {
+  nav {
+    display: none;
+  }
+
+  app-navbar {
+    display: block;
+  }
+
+  .image {
+    height: 60vh;
+  }
+
+  .ranger {
+    object-position: 75%;
+  }
+
+  .march {
+    object-position: 85%;
+  }
+
+  .bronco {
+    object-position: 0.5%;
+  }
+
+  .container-info {
+    top: 82%;
+    left: 25%;
+  }
+
+  .container-texto {
+    width: 300px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .titulo {
+    display: none;
+    font-size: 3rem;
+  }
+
+  .paragrafo {
+    display: none;
+    font-size: 1.75rem;
+  }
+
+  .container-link {
+    width: 250px;
+  }
+
+  .link {
+    font-size: 0.90rem;
+  }
+
+}
+
+@media(min-width:601px) and (max-width: 800px) {
+  nav {
+    transform: scale(0.6);
+    left: 48%;
+  }
+
+  .ranger {
+    object-position: 72%;
+  }
+
+  .march {
+    object-position: 85%;
+  }
+
+  .bronco {
+    object-position: 1%;
+  }
+
+  .logo {
+    transform: scale(1.2);
+  }
+
+  .container-info {
+    left: 2%;
+  }
+
+  .titulo {
+    font-size: 2.5rem;
+  }
+
+  .paragrafo {
+    font-size: 1.75rem;
+  }
+
+  .link {
+    font-size: 0.8rem;
+  }
+}
+
+@media(min-width:801px) and (max-width: 1024px) {
+  nav {
+    transform: scale(0.7);
+    left: 55%;
+  }
+
+  .march {
+    object-position: 85%;
+  }
+
+  .bronco {
+    object-position: 1%;
+  }
+
+}
+
+@media(min-width:1025px) and (max-width: 1400px) {
+  nav {
+    transform: scale(0.8);
+    left: 62%;
+  }
+
+}
+
+@media(min-width:1401px) and (max-width: 1900px) {
+  nav {
+    transform: scale(0.9);
+    left: 72%;
+  }
+
 }
