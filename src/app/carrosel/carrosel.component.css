@@ -10,6 +10,10 @@ nav {
   top: 1%;
 }
 
+.carousel {
+  height: 100vh;
+}
+
 .cabecalho__link {
   font-family: var(--font-primaria);
   color: white;
@@ -76,6 +80,79 @@ nav {
   background-color: #d1d1d1;
 }
 
+.apresentacao-lancamento__tabela {
+  display: table;
+  margin: 0 auto;
+  border-spacing: 5rem 0.2rem;
+}
+
+.tabela-container {
+  display: flex;
+  width: 70%;
+}
+
+.tabela-container__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.apresentacao-lancamento__tabela__input {
+  transform: scale(2.5);
+  margin-right: 1rem;
+}
+
+.apresentacao-lancamento__linha__img {
+  width: 50%;
+  cursor: pointer;
+}
+
+.apresentacao-lancamento__linha__img:hover {
+  width: 21%;
+}
+
+.apresentacao-lancamento__container {
+  display: flex;
+  justify-content: center;
+  padding: 1% 0 0 0;
+}
+
+.apresentacao-lancamento__button {
+  display: block;
+  margin: 0 auto;
+  background-color: #1919e6;
+  color: white;
+  padding: 0.8rem 6rem;
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-color: black;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1.5%;
+}
+
+.apresentacao-lancamento__button:hover {
+  background-color: #5353ec;
+}
+
+.apresentacao-lancamento__label {
+  color: #5353ec;
+  font-size: 1rem;
+}
+
+.apresentacao-lancamento__paragrafo {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.apresentacao-contato {
+  flex: 1;
+}
+
+.linha {
+  margin-top: 0.5%;
+}
+
+
 @media(max-width: 600px) {
   nav {
     display: none;
@@ -83,6 +160,10 @@ nav {
 
   app-navbar {
     display: block;
+  }
+
+  .carousel {
+    height: 60vh;
   }
 
   .image {
