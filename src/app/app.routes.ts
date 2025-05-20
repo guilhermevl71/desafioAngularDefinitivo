@@ -3,6 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CarroselComponent } from './carrosel/carrosel.component';
+import { BroncoComponent } from './veiculos/bronco/bronco.component';
 
 export const routes: Routes = [
   {
@@ -16,7 +17,7 @@ export const routes: Routes = [
   },
   {
     path:'home',
-    component:HomeComponent
+    component:CarroselComponent
   },
   {
     path:'dashboard',
@@ -24,7 +25,7 @@ export const routes: Routes = [
   },
   {
     path:'teste',
-    component:CarroselComponent
+    component:BroncoComponent
   }
 
 ];

@@ -1,0 +1,51 @@
+<section>
+    <app-navbar></app-navbar>
+    <nav>
+        <a class="cabecalho__link" [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
+        <a class="cabecalho__link" [routerLink]="['/lancamento']" routerLinkActive="router-link-active">Comparação</a>
+          <a class="nav-link dropdown-toggle cabecalho__link" href="#" id="veiculosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Veículos
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="veiculosDropdown">
+            <li><a class="dropdown-item" [routerLink]="['/veiculo/bronco']">Ford Bronco</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/veiculo/ranger']">Ford Ranger</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/veiculo/mustang']">Mustang Mach-E</a></li>
+          </ul>
+        <a class="cabecalho__link" [routerLink]="['/contato']" routerLinkActive="router-link-active">Contato</a>
+        <a class="cabecalho__link" [routerLink]="['/login']" routerLinkActive="router-link-active">Login</a> <!--fazer um dropdown-->
+    </nav>
+    <iframe class="video" src="https://www.youtube.com/embed/Qdt1OlbSR5I" frameborder="0" allowfullscreen></iframe>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="vehicleCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/bronco/bronco2.jpg" class="d-block w-100 imagem" alt="Ford Bronco">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/bronco/interior.jpg" class="d-block w-100 imagem" alt="Interior">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#vehicleCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#vehicleCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h1>Ford Bronco 2023</h1>
+                <p class="lead">SUV que não segue caminhos. Cria os seus.</p>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item"><strong>Motor:</strong> 2.7L V6 EcoBoost</li>
+                    <li class="list-group-item"><strong>Transmissão:</strong> Automática de 10 marchas</li>
+                    <li class="list-group-item"><strong>Tração:</strong> 4x4</li>
+                </ul>
+                <h3 class="text-success">R$ 285.000,00</h3>
+                <a class="botao">Comprar</a>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,96 +1,98 @@
-<app-navbar></app-navbar>
-<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-current="true"></button>
-    <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
-      <img src="assets/ranger-raptor/ranger1.jpg" class="d-block w-100 image ranger" alt="...">
-      <nav>
-        <a class="cabecalho__link" [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
-        <a class="cabecalho__link" [routerLink]="['/lancamento']" routerLinkActive="router-link-active">Lançamento</a>
-        <a class="cabecalho__link" [routerLink]="['/contato']" routerLinkActive="router-link-active">Contato</a>
-        <a class="cabecalho__link" [routerLink]="['/login']" routerLinkActive="router-link-active">Login</a> <!--fazer um dropdown-->
-      </nav>
-      <div class="container-info">
-        <img src="assets/logo/logotodabranca.png" alt="" class="logo">
-        <div class="container-texto">
-          <h1 class="titulo">Ford Ranger 2023</h1>
-          <p class="paragrafo">Raça forte na terra e no asfalto!</p>
+<section>
+    <app-navbar></app-navbar>
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-current="true"></button>
+      <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="assets/ranger-raptor/ranger1.jpg" class="d-block w-100 image ranger" alt="...">
+        <nav>
+          <a class="cabecalho__link" [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
+          <a class="cabecalho__link" [routerLink]="['/lancamento']" routerLinkActive="router-link-active">Lançamento</a>
+          <a class="cabecalho__link" [routerLink]="['/contato']" routerLinkActive="router-link-active">Contato</a>
+          <a class="cabecalho__link" [routerLink]="['/login']" routerLinkActive="router-link-active">Login</a> <!--fazer um dropdown-->
+        </nav>
+        <div class="container-info">
+          <img src="assets/logo/logotodabranca.png" alt="" class="logo">
+          <div class="container-texto">
+            <h1 class="titulo">Ford Ranger 2023</h1>
+            <p class="paragrafo">Raça forte na terra e no asfalto!</p>
+          </div>
+          <div class="container-link">
+            <a [routerLink]="['/dashboard']" class="link" routerLinkActive="router-link-active">Explore o veiculo</a>
+          </div>
         </div>
-        <div class="container-link">
-          <a [routerLink]="['/dashboard']" class="link" routerLinkActive="router-link-active">Explore o veiculo</a>
+      </div>
+      <div class="carousel-item" data-bs-interval="10000">
+        <img src="assets/march/mustang march-e.jpg" class="d-block w-100 image march" alt="...">
+        <nav>
+          <a class="cabecalho__link" [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
+          <a class="cabecalho__link" [routerLink]="['/lancamento']" routerLinkActive="router-link-active">Lançamento</a>
+          <a class="cabecalho__link" [routerLink]="['/contato']" routerLinkActive="router-link-active">Contato</a>
+          <a class="cabecalho__link" [routerLink]="['/login']" routerLinkActive="router-link-active">Login</a> <!--fazer um dropdown-->
+        </nav>
+        <div class="container-info">
+          <img src="assets/logo/logotodabranca.png" alt="" class="logo">
+          <div class="container-texto">
+            <h1 class="titulo">Ford Mustang Mach-E 2023</h1>
+            <p class="paragrafo">Potência silenciosa, presença marcante</p>
+          </div>
+          <div class="container-link">
+            <a [routerLink]="['/dashboard']" class="link" routerLinkActive="router-link-active">Explore o veiculo</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="10000">
+        <img src="assets/bronco/Bronco.jpg" class="d-block w-100 image bronco" alt="...">
+        <nav>
+          <a class="cabecalho__link" [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
+          <a class="cabecalho__link" [routerLink]="['/lancamento']" routerLinkActive="router-link-active">Lançamento</a>
+          <a class="cabecalho__link" [routerLink]="['/contato']" routerLinkActive="router-link-active">Contato</a>
+          <a class="cabecalho__link" [routerLink]="['/login']" routerLinkActive="router-link-active">Login</a> <!--fazer um dropdown-->
+        </nav>
+        <div class="container-info">
+          <img src="assets/logo/logotodabranca.png" alt="" class="logo">
+          <div class="container-texto">
+            <h1 class="titulo">Ford Bronco 2023</h1>
+            <p class="paragrafo"> SUV que não segue caminhos. <br>Cria os seus.</p>
+          </div>
+          <div class="container-link">
+            <a [routerLink]="['/dashboard']" class="link" routerLinkActive="router-link-active">Explore o veiculo</a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="carousel-item" data-bs-interval="10000">
-      <img src="assets/march/mustang march-e.jpg" class="d-block w-100 image march" alt="...">
-      <nav>
-        <a class="cabecalho__link" [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
-        <a class="cabecalho__link" [routerLink]="['/lancamento']" routerLinkActive="router-link-active">Lançamento</a>
-        <a class="cabecalho__link" [routerLink]="['/contato']" routerLinkActive="router-link-active">Contato</a>
-        <a class="cabecalho__link" [routerLink]="['/login']" routerLinkActive="router-link-active">Login</a> <!--fazer um dropdown-->
-      </nav>
-      <div class="container-info">
-        <img src="assets/logo/logotodabranca.png" alt="" class="logo">
-        <div class="container-texto">
-          <h1 class="titulo">Ford Mustang Mach-E 2023</h1>
-          <p class="paragrafo">Potência silenciosa, presença marcante</p>
-        </div>
-        <div class="container-link">
-          <a [routerLink]="['/dashboard']" class="link" routerLinkActive="router-link-active">Explore o veiculo</a>
-        </div>
+  </div>
+  <div class="carro-geral">
+    <div class="carro ajuste">
+      <img class="carro-img" src="assets/side/rangerside.png" alt="">
+      <div class="carro-texto">
+        <h1 class="carro-titulo">Relampago Marquinhos</h1>
+        <p class="carro-paragrafo">Preço inicial</p>
+        <p class="carro-preco">R$ 200,000,00</p>
       </div>
+      <a class="carro-link" href="">Conhecer</a>
     </div>
-    <div class="carousel-item" data-bs-interval="10000">
-      <img src="assets/bronco/Bronco.jpg" class="d-block w-100 image bronco" alt="...">
-      <nav>
-        <a class="cabecalho__link" [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
-        <a class="cabecalho__link" [routerLink]="['/lancamento']" routerLinkActive="router-link-active">Lançamento</a>
-        <a class="cabecalho__link" [routerLink]="['/contato']" routerLinkActive="router-link-active">Contato</a>
-        <a class="cabecalho__link" [routerLink]="['/login']" routerLinkActive="router-link-active">Login</a> <!--fazer um dropdown-->
-      </nav>
-      <div class="container-info">
-        <img src="assets/logo/logotodabranca.png" alt="" class="logo">
-        <div class="container-texto">
-          <h1 class="titulo">Ford Bronco 2023</h1>
-          <p class="paragrafo"> SUV que não segue caminhos. <br>Cria os seus.</p>
-        </div>
-        <div class="container-link">
-          <a [routerLink]="['/dashboard']" class="link" routerLinkActive="router-link-active">Explore o veiculo</a>
-        </div>
+    <div class="carro">
+      <img class="carro-img" src="assets/side/marchside.png" alt="">
+      <div class="carro-texto">
+        <h1 class="carro-titulo">Relampago Marquinhos</h1>
+        <p class="carro-paragrafo">Preço inicial</p>
+        <p class="carro-preco">R$ 300,000,00</p>
+      </div>
+      <a class="carro-link" href="">Conhecer</a>
     </div>
-  </div>
-</div>
-
-<section class="carro-geral">
-  <div class="carro ajuste">
-    <img class="carro-img" src="assets/side/rangerside.png" alt="">
-    <div class="carro-texto">
-      <h1 class="carro-titulo">Relampago Marquinhos</h1>
-      <p class="carro-paragrafo">Preço inicial</p>
-      <p class="carro-preco">R$ 200,000,00</p>
+    <div class="carro ajuste">
+      <img class="carro-img" src="assets/side/broncoside.png" alt="">
+      <div class="carro-texto">
+        <h1 class="carro-titulo">Relampago Marquinhos</h1>
+        <p class="carro-paragrafo">Preço inicial</p>
+        <p class="carro-preco">R$ 185,000,00</p>
+      </div>
+      <a class="carro-link" href="">Conhecer</a>
     </div>
-    <a class="carro-link" href="">Conhecer</a>
-  </div>
-  <div class="carro">
-    <img class="carro-img" src="assets/side/marchside.png" alt="">
-    <div class="carro-texto">
-      <h1 class="carro-titulo">Relampago Marquinhos</h1>
-      <p class="carro-paragrafo">Preço inicial</p>
-      <p class="carro-preco">R$ 300,000,00</p>
-    </div>
-    <a class="carro-link" href="">Conhecer</a>
-  </div>
-  <div class="carro ajuste">
-    <img class="carro-img" src="assets/side/broncoside.png" alt="">
-    <div class="carro-texto">
-      <h1 class="carro-titulo">Relampago Marquinhos</h1>
-      <p class="carro-paragrafo">Preço inicial</p>
-      <p class="carro-preco">R$ 185,000,00</p>
-    </div>
-    <a class="carro-link" href="">Conhecer</a>
   </div>
 </section>
