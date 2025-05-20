@@ -6,7 +6,7 @@ nav {
   display: flex;
   gap: 2rem;
   position: absolute;
-  left: 75%;
+  left: 70%;
   top: 1%;
 }
 
@@ -17,12 +17,11 @@ nav {
   font-weight: 400;
   font-size: 1.3rem;
   text-decoration: none;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .cabecalho__link:hover {
   color: #d1d1d1;
-  transform: scale(1.05);
 }
 
 .image { /* quando for deixa responsivo apenas muda o heigh de vh para px eu acho, ou puxa mx heigh ou colocar auto */

@@ -1,0 +1,40 @@
+<section>
+  <app-cabecalho></app-cabecalho>
+  <app-navbar></app-navbar>
+  <div class="forms">
+    <div>
+    <h2 class="titulo">Sobre Você</h2>
+    <form class="formulario" id="form" onsubmit="Post(this); return false;">
+      <input type="text" id="nomeid" name="nome" placeholder="NOME*" class="fordform" required autofocus>
+      <input type="text" id="emailid" name="email" placeholder="E-MAIL*" class="fordform" required>
+      <input type="text" id="cpfid" name="cpf" placeholder="CPF*" class="fordform" required>
+      <input type="text" name="sobrenome" placeholder="SOBRENOME*" class="fordform" required>
+      <input type="text" name="telefone" placeholder="TELEFONE*" class="fordform" required>
+      <select name="contato" class="fordform" required>
+          <option selected disabled>COMO DESEJA SER CONTATADO*</option>
+          <option>TELEFONE</option>
+          <option>E-MAIL</option>
+      </select>
+      <select name="contato" class="fordform" required>
+        <option selected disabled>Qual motivo do seu contato ?*</option>
+        <option>Reclamação</option>
+        <option>Duvida</option>
+    </select>
+      <div class="paragraph_container">
+          <p class="form_paragraph1" >Os dados serão mantidos em nossa base de dados, só enquanto for desejado por você. A qualquer momento, será possível editar ou remover tais dados. <a target="_blank" [routerLink]="['/politica-de-privacidade']" routerLinkActive="router-link-active" >Termos e Condições</a></p>
+      </div>
+      <div class="termo1">
+          <input type="checkbox" name="" id="checkboxid" onchange="desabilitarbutton()">
+          <p class="form_paragraph2">Sim, li e concordo com os vossos termos.</p>
+      </div>
+      <div class="termo2">
+          <input type="checkbox" name="" id="checkbox">
+          <p class="form_paragraph2">Sim, também quero receber descontos e novidades.</p>
+      </div>
+      <div class="form_button">
+          <button class="botao" id="buttonid" type="submit" onclick="Enviar()">Enviar</button>
+      </div>
+    </form>
+    </div>
+  </div>
+</section>

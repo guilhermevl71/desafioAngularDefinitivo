@@ -6,6 +6,11 @@ import { CarroselComponent } from './carrosel/carrosel.component';
 import { BroncoComponent } from './veiculos/bronco/bronco.component';
 import { PoliticaDePrivacidadeComponent } from './politica-de-privacidade/politica-de-privacidade.component';
 import { LgpdComponent } from './lgpd/lgpd.component';
+import { RangerComponent } from './veiculos/ranger/ranger.component';
+import { MarchComponent } from './veiculos/march/march.component';
+import { Component } from '@angular/core';
+import { ContatoComponent } from './contato/contato.component';
+import { ComparacaoComponent } from './comparacao/comparacao.component';
 
 export const routes: Routes = [
   {
@@ -27,7 +32,7 @@ export const routes: Routes = [
   },
   {
     path:'teste',
-    component:BroncoComponent
+    component:MarchComponent
   },
   {
     path: 'politica-de-privacidade',
@@ -36,6 +41,14 @@ export const routes: Routes = [
   {
     path: 'lgpd',
     component: LgpdComponent
+  },
+  {
+    path: 'contato',
+    component:ContatoComponent
+  },
+  {
+    path: 'comparacao',
+    component:ComparacaoComponent
   }
 
 ];

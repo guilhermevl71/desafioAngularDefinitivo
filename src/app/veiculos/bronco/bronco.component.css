@@ -30,7 +30,7 @@ app-navbar {
 }
 
 @media(max-width:1024px) {
-    nav {
+    app-cabecalho {
       display: none;
     }
 

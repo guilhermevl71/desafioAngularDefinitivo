@@ -1,3 +1,7 @@
+app-navbar {
+  display: none;
+}
+
 .container {
   color: #fff;
   background-color: #000814;
@@ -7,4 +11,16 @@
 
 h1, h2 {
   color: #ffffff;
+}
+
+@media(max-width:1024px) {
+  app-cabecalho {
+    display: none;
+  }
+
+  app-navbar {
+      display: block;
+      background: linear-gradient(to bottom, #0c1f4b, #000000);
+      height: 50px;
+  }
 }
