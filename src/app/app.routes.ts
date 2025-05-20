@@ -4,6 +4,8 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CarroselComponent } from './carrosel/carrosel.component';
 import { BroncoComponent } from './veiculos/bronco/bronco.component';
+import { PoliticaDePrivacidadeComponent } from './politica-de-privacidade/politica-de-privacidade.component';
+import { LgpdComponent } from './lgpd/lgpd.component';
 
 export const routes: Routes = [
   {
@@ -26,6 +28,14 @@ export const routes: Routes = [
   {
     path:'teste',
     component:BroncoComponent
+  },
+  {
+    path: 'politica-de-privacidade',
+    component: PoliticaDePrivacidadeComponent
+  },
+  {
+    path: 'lgpd',
+    component: LgpdComponent
   }
 
 ];

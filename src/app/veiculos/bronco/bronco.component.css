@@ -2,31 +2,6 @@ app-navbar {
     display: none;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  background: linear-gradient(to bottom, #0c1f4b, #000000);
-  padding-left: 10px;
-  height: 55px;
-}
-
-.cabecalho__link {
-  font-family: var(--font-primaria);
-  color: white;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
-  font-weight: 400;
-  font-size: 1.3rem;
-  text-decoration: none;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.cabecalho__link:hover {
-  color: #d1d1d1;
-  transform: scale(1.05);
-}
-
 .video {
     height: 55vh;
     width: 100%;

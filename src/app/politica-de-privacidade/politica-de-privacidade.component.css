@@ -1,0 +1,10 @@
+.container {
+  color: #fff;
+  background-color: #000814;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+h1, h2 {
+  color: #ffffff;
+}

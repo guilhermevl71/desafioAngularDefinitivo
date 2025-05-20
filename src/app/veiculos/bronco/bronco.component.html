@@ -1,19 +1,6 @@
 <section>
     <app-navbar></app-navbar>
-    <nav>
-        <a class="cabecalho__link" [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
-        <a class="cabecalho__link" [routerLink]="['/lancamento']" routerLinkActive="router-link-active">Comparação</a>
-          <a class="nav-link dropdown-toggle cabecalho__link" href="#" id="veiculosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Veículos
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="veiculosDropdown">
-            <li><a class="dropdown-item" [routerLink]="['/veiculo/bronco']">Ford Bronco</a></li>
-            <li><a class="dropdown-item" [routerLink]="['/veiculo/ranger']">Ford Ranger</a></li>
-            <li><a class="dropdown-item" [routerLink]="['/veiculo/mustang']">Mustang Mach-E</a></li>
-          </ul>
-        <a class="cabecalho__link" [routerLink]="['/contato']" routerLinkActive="router-link-active">Contato</a>
-        <a class="cabecalho__link" [routerLink]="['/login']" routerLinkActive="router-link-active">Login</a> <!--fazer um dropdown-->
-    </nav>
+    <app-cabecalho></app-cabecalho>
     <iframe class="video" src="https://www.youtube.com/embed/Qdt1OlbSR5I" frameborder="0" allowfullscreen></iframe>
     <div class="container py-5">
         <div class="row">
