@@ -45,3 +45,13 @@
   padding-bottom: 5px;
   gap: 2px;
 }
+
+@media(max-width: 1024px) {
+  .geral {
+    gap: 150px;
+  }
+
+  .imagem {
+    width: 30%;
+  }
+}

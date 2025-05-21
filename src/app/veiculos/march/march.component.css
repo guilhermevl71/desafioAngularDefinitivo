@@ -29,6 +29,12 @@ cursor: pointer;
   opacity: 50%;
 }
 
+.comprar {
+  display: flex;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
 @media(max-width:1024px) {
   app-cabecalho {
     display: none;
