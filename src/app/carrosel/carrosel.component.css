@@ -141,6 +141,7 @@ nav {
 
   app-navbar {
     display: block;
+    background-color: black;
   }
 
   .carousel {

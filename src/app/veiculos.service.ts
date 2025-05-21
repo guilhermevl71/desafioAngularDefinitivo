@@ -8,8 +8,8 @@ import { Dados } from '../../models/dados.model';
   providedIn: 'root'
 })
 export class VeiculosService {
-  private readonly API = 'http://localhost:3001/vehicles'
-  private readonly API2 = 'http://localhost:3001/vehicleData'
+  private readonly API = 'https://desafio-angular-definitivo.onrender.com/vehicles'
+  private readonly API2 = 'https://desafio-angular-definitivo.onrender.com/vehicleData'
 
   constructor(private http: HttpClient) { }
    

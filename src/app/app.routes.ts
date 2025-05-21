@@ -15,7 +15,7 @@ import { VeiculosComponent } from './veiculos/veiculos.component';
 export const routes: Routes = [
   {
     path:'',
-    redirectTo:'login',
+    redirectTo:'home',
     pathMatch:'full'
   },
   {
@@ -29,10 +29,6 @@ export const routes: Routes = [
   {
     path:'dashboard',
     component:DashboardComponent
-  },
-  {
-    path:'teste',
-    component:MarchComponent
   },
   {
     path: 'politica-de-privacidade',

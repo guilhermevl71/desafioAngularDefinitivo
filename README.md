@@ -6,8 +6,12 @@ Um sistema web construído com Angular e Bootstrap para visualização dinâmica
 
 ## 📸 Capturas de Tela
 
-![Tela de Login](public/login.ong)   
 ![Tela de home](public/home.png)
+![Tela de veículos](public/veiculos.png)
+![Tela de contato](public/contato.png)
+![Tela de politica de privacidade](public/politica-de-privacidade.png)
+![Tela de lgpd](public/lgpd.png)
+![Tela de Login](public/login.ong)   
 ![Dashboard](public/dashboard.png)
 
 ---
@@ -16,10 +20,20 @@ Um sistema web construído com Angular e Bootstrap para visualização dinâmica
 
 - 🔐 **Login com validação**
   - Campo de usuário e senha
-  - Opção de "Continuar conectado" com toggle
 - 🏚️ **Home**
-  - Tela inicio após validação das credencias
-  - Funcionalidades do menu lateral e logout
+  - Carrosel de veículos com informações
+  - veículos com seus preços iniciais
+- 🚗 **Veículos**
+  - pagina para cada um dos veículos que estão na pagina inicial
+  - carrosel com foto do exterior e interior do veículo
+  - tabela com as principais informações do veículo
+- 📒 **Contato**
+  - Formulario para contato com a ford
+  - coleta e salva as informações digitadas
+- 📒 **Lgpd**
+  - Todas informações sobre a proteção de dados
+- 📒 **Politica-de-privacidade**
+  - texto sobre a politica de privacidade da empresa
 - 📊 **Dashboard dinâmico**
   - Seleção de veículos com `select`
   - Cards com total de vendas, conectados e atualizações
@@ -90,31 +104,43 @@ Um sistema web construído com Angular e Bootstrap para visualização dinâmica
 ## 📁 Estrutura de Pastas
 
 ```
-📦 ford
+📦 DESAFIOANGULARDEFINITIVO
 ├── src
 │   ├── backend
 │   │    ├── api
 |   |        └── index.js
-│   ├── app
-│   │   ├── pages
-│   │   │   ├── dashboard 
-|   |   |   ├── home
-│   │   │   ├── login
-│   │  │    ├── logout
-│   │    │    ├── navbar
-│   ├── assets
-│   │   └── img/
-│  
+|   | app
+|   ├── 📁 cabecalho
+|   ├── 📁 carrossel
+|   ├── 📁 contato
+|   ├── 📁 dashboard
+|   ├── 📁 home
+|   ├── 📁 lgpd
+|   ├── 📁 login
+|   ├── 📁 logout
+|   ├── 📁 menu
+|   ├── 📁 navbar
+|   ├── 📁 politica-de-privacidade
+|   ├── 📁 rodape
+|   ├── 📁 veiculos  
 ```
 
 ---
 
 ## 🏁 Melhorias Futuras
 
+### 🔒 Segurança
 - [ ] Criptografia de sessão/localStorage
-- [ ] Implementar gráficos com Chart.js
-- [ ] Autenticação com JWT
-- [ ] Footer fixo em tela cheia com rolagem
+
+### 🚗 Funcionalidades
+- [ ] Adicionar todos os veículos e suas especificações
+- [ ] Funcionalidade de comparação entre veículos
+- [ ] Aprofundamento maior sobre cada veículo
+
+### 📝 Cadastro
+- [ ] Sistema de cadastramento de veículos
+
+
 
 ---
 

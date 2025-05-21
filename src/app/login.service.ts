@@ -7,7 +7,7 @@ import { Usuario } from '../../models/usuario.model';
   providedIn: 'root'
 })
 export class LoginService {
-  private API = 'http://localhost:3001/login'
+  private API = 'https://desafio-angular-definitivo.onrender.com/login'
 
   constructor(private http: HttpClient) { }
 
