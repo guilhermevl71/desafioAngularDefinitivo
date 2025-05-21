@@ -7,10 +7,13 @@
     align-items: center;
 }
 
-.container-form {
-}
-
 .imagem {
     width: 98%;
     opacity: 50%;
+}
+
+@media(max-width: 1024px) {
+    .teste {
+        flex-direction: column;
+    }
 }

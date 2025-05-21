@@ -21,7 +21,7 @@ export class FormularioLoginComponent {
   teste(){
     this.loginservice.getlogin(this.nome, this.senha).subscribe({
       next: (res) => {
-        this.router.navigate(['/home']);
+        this.router.navigate(['/dashboard']);
         this.erro = '';
       },
       error: (err: any) => {

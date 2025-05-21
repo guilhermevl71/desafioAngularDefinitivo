@@ -10,7 +10,7 @@ import { RangerComponent } from './veiculos/ranger/ranger.component';
 import { MarchComponent } from './veiculos/march/march.component';
 import { Component } from '@angular/core';
 import { ContatoComponent } from './contato/contato.component';
-import { ComparacaoComponent } from './comparacao/comparacao.component';
+import { VeiculosComponent } from './veiculos/veiculos.component';
 
 export const routes: Routes = [
   {
@@ -47,8 +47,26 @@ export const routes: Routes = [
     component:ContatoComponent
   },
   {
-    path: 'comparacao',
-    component:ComparacaoComponent
+    path:'veiculos',
+    children: [
+      {
+        path:'',
+        redirectTo:'bronco',
+        pathMatch:'full'
+      },
+      {
+        path:'bronco',
+        component:BroncoComponent
+      },
+      {
+        path:'ranger',
+        component:RangerComponent
+      },
+      {
+        path:'march',
+        component:MarchComponent
+      }
+    ]
   }
 
 ];

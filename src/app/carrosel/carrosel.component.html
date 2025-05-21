@@ -11,7 +11,6 @@
         <img src="assets/ranger-raptor/ranger1.jpg" class="d-block w-100 image ranger" alt="...">
         <nav>
           <a class="cabecalho__link" [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
-          <a class="cabecalho__link" [routerLink]="['/lancamento']" routerLinkActive="router-link-active">Comparação</a>
           <a class="nav-link dropdown-toggle cabecalho__link" href="#" id="veiculosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Veículos
           </a>
@@ -30,7 +29,7 @@
             <p class="paragrafo">Raça forte na terra e no asfalto!</p>
           </div>
           <div class="container-link">
-            <a [routerLink]="['/dashboard']" class="link" routerLinkActive="router-link-active">Explore o veiculo</a>
+            <a [routerLink]="['/veiculos/ranger']" class="link" routerLinkActive="router-link-active">Explore o veiculo</a>
           </div>
         </div>
       </div>
@@ -38,7 +37,6 @@
         <img src="assets/march/mustang march-e.jpg" class="d-block w-100 image march" alt="...">
         <nav>
           <a class="cabecalho__link" [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
-          <a class="cabecalho__link" [routerLink]="['/lancamento']" routerLinkActive="router-link-active">Comparação</a>
           <a class="nav-link dropdown-toggle cabecalho__link" href="#" id="veiculosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Veículos
           </a>
@@ -57,7 +55,7 @@
             <p class="paragrafo">Potência silenciosa, presença marcante</p>
           </div>
           <div class="container-link">
-            <a [routerLink]="['/dashboard']" class="link" routerLinkActive="router-link-active">Explore o veiculo</a>
+            <a [routerLink]="['/veiculos/march']" class="link" routerLinkActive="router-link-active">Explore o veiculo</a>
           </div>
         </div>
       </div>
@@ -65,7 +63,6 @@
         <img src="assets/bronco/Bronco.jpg" class="d-block w-100 image bronco" alt="...">
         <nav>
           <a class="cabecalho__link" [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
-          <a class="cabecalho__link" [routerLink]="['/lancamento']" routerLinkActive="router-link-active">Comparação</a>
           <a class="nav-link dropdown-toggle cabecalho__link" href="#" id="veiculosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Veículos
           </a>
@@ -84,39 +81,39 @@
             <p class="paragrafo"> SUV que não segue caminhos. <br>Cria os seus.</p>
           </div>
           <div class="container-link">
-            <a [routerLink]="['/dashboard']" class="link" routerLinkActive="router-link-active">Explore o veiculo</a>
+            <a [routerLink]="['/veiculos/bronco']" class="link" routerLinkActive="router-link-active">Explore o veiculo</a>
           </div>
         </div>
       </div>
     </div>
   </div>
   <div class="carro-geral">
-    <div class="carro ajuste">
+    <div class="carro">
       <img class="carro-img" src="assets/side/rangerside.png" alt="">
       <div class="carro-texto">
-        <h1 class="carro-titulo">Relampago Marquinhos</h1>
+        <h1 class="carro-titulo">Ford Ranger Raptor</h1>
         <p class="carro-paragrafo">Preço inicial</p>
-        <p class="carro-preco">R$ 200,000,00</p>
+        <p class="carro-preco">Apartir de R$ 239.990,00</p>
       </div>
-      <a class="carro-link" href="">Conhecer</a>
+      <a class="carro-link" [routerLink]="['/veiculos/ranger']" routerLinkActive="router-link-active" >Conhecer</a>
     </div>
     <div class="carro">
       <img class="carro-img" src="assets/side/marchside.png" alt="">
       <div class="carro-texto">
-        <h1 class="carro-titulo">Relampago Marquinhos</h1>
+        <h1 class="carro-titulo">Ford Mustang March-E</h1>
         <p class="carro-paragrafo">Preço inicial</p>
-        <p class="carro-preco">R$ 300,000,00</p>
+        <p class="carro-preco">Apartir de R$ 486.000,00</p>
       </div>
-      <a class="carro-link" href="">Conhecer</a>
+      <a class="carro-link" [routerLink]="['/veiculos/march']" routerLinkActive="router-link-active" >Conhecer</a>
     </div>
-    <div class="carro ajuste">
+    <div class="carro">
       <img class="carro-img" src="assets/side/broncoside.png" alt="">
       <div class="carro-texto">
-        <h1 class="carro-titulo">Relampago Marquinhos</h1>
+        <h1 class="carro-titulo">Ford Bronco 2023</h1>
         <p class="carro-paragrafo">Preço inicial</p>
-        <p class="carro-preco">R$ 185,000,00</p>
+        <p class="carro-preco">Apartir de R$ 256.900,00</p>
       </div>
-      <a class="carro-link" href="">Conhecer</a>
+      <a class="carro-link" [routerLink]="['/veiculos/bronco']" routerLinkActive="router-link-active">Conhecer</a>
     </div>
   </div>
 </section>
