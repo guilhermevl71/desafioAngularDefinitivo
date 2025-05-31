@@ -16,4 +16,8 @@
     .teste {
       flex-direction: column;
     }
+
+    .container-img {
+        height: 35vh;
+    }
 }
